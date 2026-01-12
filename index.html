@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HealthTrackFree - Health Tracking for GLP-1 Users</title>
+    <meta name="description" content="Free health tracking app for GLP-1 medication users. Track weight, doses, meals, exercise and more.">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Language Toggle -->
+    <div class="lang-toggle">
+        <button class="lang-btn active" data-lang="pt">PT</button>
+        <button class="lang-btn" data-lang="en">EN</button>
+    </div>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="container">
+            <h1 class="hero-title" data-pt="HealthTrackFree" data-en="HealthTrackFree">HealthTrackFree</h1>
+            <p class="hero-subtitle" data-pt="Monitorização completa de saúde para utilizadores de medicamentos GLP-1" data-en="Complete health tracking for GLP-1 medication users">Monitorização completa de saúde para utilizadores de medicamentos GLP-1</p>
+            <p class="hero-desc" data-pt="Ozempic • Mounjaro • Wegovy • Saxenda" data-en="Ozempic • Mounjaro • Wegovy • Saxenda">Ozempic • Mounjaro • Wegovy • Saxenda</p>
+            <div class="hero-buttons">
+                <a href="https://play.google.com/store/apps/details?id=com.ruifelix.healthtrackfree" class="btn-primary" target="_blank">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.6 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.53,12.9 20.18,13.18L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M6.05,2.66L16.81,8.88L14.54,11.15L6.05,2.66Z"/></svg>
+                    <span data-pt="Descarregar na Google Play" data-en="Download on Google Play">Descarregar na Google Play</span>
+                </a>
+                <span class="badge" data-pt="100% Grátis" data-en="100% Free">100% Grátis</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <h2 data-pt="Funcionalidades" data-en="Features">Funcionalidades</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">💊</div>
+                    <h3 data-pt="Gestão de Medicação" data-en="Medication Management">Gestão de Medicação</h3>
+                    <p data-pt="Registo de doses com lembretes inteligentes e histórico completo" data-en="Dose tracking with smart reminders and complete history">Registo de doses com lembretes inteligentes e histórico completo</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">⚖️</div>
+                    <h3 data-pt="Análise de Peso" data-en="Weight Analysis">Análise de Peso</h3>
+                    <p data-pt="Gráficos detalhados, previsões e insights personalizados" data-en="Detailed charts, predictions and personalized insights">Gráficos detalhados, previsões e insights personalizados</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🍽️</div>
+                    <h3 data-pt="Registo de Refeições" data-en="Meal Tracking">Registo de Refeições</h3>
+                    <p data-pt="Fotos de refeições e categorização nutricional rápida" data-en="Meal photos and quick nutritional categorization">Fotos de refeições e categorização nutricional rápida</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💪</div>
+                    <h3 data-pt="Exercício Físico" data-en="Physical Exercise">Exercício Físico</h3>
+                    <p data-pt="Monitorização de atividade e metas semanais" data-en="Activity monitoring and weekly goals">Monitorização de atividade e metas semanais</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💧</div>
+                    <h3 data-pt="Hidratação" data-en="Hydration">Hidratação</h3>
+                    <p data-pt="Acompanhamento diário de consumo de água" data-en="Daily water intake tracking">Acompanhamento diário de consumo de água</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📊</div>
+                    <h3 data-pt="Composição Corporal" data-en="Body Composition">Composição Corporal</h3>
+                    <p data-pt="Medições detalhadas e análise de progresso" data-en="Detailed measurements and progress analysis">Medições detalhadas e análise de progresso</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📸</div>
+                    <h3 data-pt="Fotos de Progresso" data-en="Progress Photos">Fotos de Progresso</h3>
+                    <p data-pt="Comparação visual com mapa de rotação corporal" data-en="Visual comparison with body rotation map">Comparação visual com mapa de rotação corporal</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📋</div>
+                    <h3 data-pt="Qualidade de Vida SF-36" data-en="SF-36 Quality of Life">Qualidade de Vida SF-36</h3>
+                    <p data-pt="Questionário validado para avaliar bem-estar" data-en="Validated questionnaire to assess wellbeing">Questionário validado para avaliar bem-estar</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">⚠️</div>
+                    <h3 data-pt="Efeitos Secundários" data-en="Side Effects">Efeitos Secundários</h3>
+                    <p data-pt="Registo e monitorização de sintomas" data-en="Symptom logging and monitoring">Registo e monitorização de sintomas</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🤖</div>
+                    <h3 data-pt="Dashboard Inteligente" data-en="Smart Dashboard">Dashboard Inteligente</h3>
+                    <p data-pt="Insights personalizados e recomendações automáticas" data-en="Personalized insights and automatic recommendations">Insights personalizados e recomendações automáticas</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">⌚</div>
+                    <h3 data-pt="Wear OS Companion" data-en="Wear OS Companion">Wear OS Companion</h3>
+                    <p data-pt="App para smartwatch com sincronização automática" data-en="Smartwatch app with automatic sync">App para smartwatch com sincronização automática</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📄</div>
+                    <h3 data-pt="Relatórios Médicos" data-en="Medical Reports">Relatórios Médicos</h3>
+                    <p data-pt="Exportação em PDF e Excel para consultas" data-en="PDF and Excel export for appointments">Exportação em PDF e Excel para consultas</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Screenshots Section -->
+    <section class="screenshots">
+        <div class="container">
+            <h2 data-pt="Capturas de Ecrã" data-en="Screenshots">Capturas de Ecrã</h2>
+            <div class="screenshots-carousel">
+                <button class="carousel-btn prev" aria-label="Previous">‹</button>
+                <div class="carousel-track">
+                    <img src="screenshots/shot1.jpg" alt="Dashboard">
+                    <img src="screenshots/shot2.jpg" alt="Home">
+                    <img src="screenshots/shot3.jpg" alt="Analysis">
+                    <img src="screenshots/shot4.jpg" alt="Tools">
+                    <img src="screenshots/shot5.jpg" alt="Dose Registration">
+                    <img src="screenshots/shot6.jpg" alt="Weight Registration">
+                    <img src="screenshots/shot7.jpg" alt="Meal Registration">
+                    <img src="screenshots/shot8.jpg" alt="Smart Dashboard">
+                    <img src="screenshots/shot9.jpg" alt="Personalized Insights">
+                    <img src="screenshots/shot10.jpg" alt="Trends Analysis">
+                    <img src="screenshots/shot11.jpg" alt="Weight Chart">
+                    <img src="screenshots/shot12.jpg" alt="Progress Tracking">
+                </div>
+                <button class="carousel-btn next" aria-label="Next">›</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq">
+        <div class="container">
+            <h2 data-pt="Perguntas Frequentes" data-en="FAQ">Perguntas Frequentes</h2>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span data-pt="A app é realmente grátis?" data-en="Is the app really free?">A app é realmente grátis?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p data-pt="Sim! O HealthTrackFree é 100% gratuito no Android, sem anúncios ou compras dentro da app. Todas as funcionalidades estão disponíveis gratuitamente." data-en="Yes! HealthTrackFree is 100% free on Android, with no ads or in-app purchases. All features are available for free.">Sim! O HealthTrackFree é 100% gratuito no Android, sem anúncios ou compras dentro da app. Todas as funcionalidades estão disponíveis gratuitamente.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span data-pt="Quais medicamentos são suportados?" data-en="Which medications are supported?">Quais medicamentos são suportados?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p data-pt="A app suporta todos os medicamentos GLP-1: Ozempic, Mounjaro, Wegovy, Saxenda, Trulicity, Victoza, Rybelsus e outros." data-en="The app supports all GLP-1 medications: Ozempic, Mounjaro, Wegovy, Saxenda, Trulicity, Victoza, Rybelsus and others.">A app suporta todos os medicamentos GLP-1: Ozempic, Mounjaro, Wegovy, Saxenda, Trulicity, Victoza, Rybelsus e outros.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span data-pt="Os meus dados estão seguros?" data-en="Is my data safe?">Os meus dados estão seguros?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p data-pt="Sim. Os dados são armazenados localmente no dispositivo e sincronizados através do Firebase com encriptação. Não partilhamos dados com terceiros." data-en="Yes. Data is stored locally on your device and synced via Firebase with encryption. We don't share data with third parties.">Sim. Os dados são armazenados localmente no dispositivo e sincronizados através do Firebase com encriptação. Não partilhamos dados com terceiros.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span data-pt="Está disponível para iOS?" data-en="Is it available for iOS?">Está disponível para iOS?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p data-pt="Ainda não, mas está planeado para início de 2025. A versão iOS terá um custo único de €1.99 para cobrir as despesas da Apple Developer." data-en="Not yet, but it's planned for early 2025. The iOS version will have a one-time cost of €1.99 to cover Apple Developer expenses.">Ainda não, mas está planeado para início de 2025. A versão iOS terá um custo único de €1.99 para cobrir as despesas da Apple Developer.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span data-pt="Posso exportar os meus dados?" data-en="Can I export my data?">Posso exportar os meus dados?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p data-pt="Sim! Podes exportar todos os dados em formato Excel (.xlsx) ou gerar relatórios médicos em PDF para partilhar com o teu médico." data-en="Yes! You can export all data in Excel format (.xlsx) or generate medical reports in PDF to share with your doctor.">Sim! Podes exportar todos os dados em formato Excel (.xlsx) ou gerar relatórios médicos em PDF para partilhar com o teu médico.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span data-pt="A app funciona offline?" data-en="Does the app work offline?">A app funciona offline?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p data-pt="Sim! Todas as funcionalidades principais funcionam offline. Os dados sincronizam automaticamente quando voltares a ter internet." data-en="Yes! All main features work offline. Data syncs automatically when you're back online.">Sim! Todas as funcionalidades principais funcionam offline. Os dados sincronizam automaticamente quando voltares a ter internet.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>HealthTrackFree</h3>
+                    <p data-pt="Monitorização de saúde gratuita para utilizadores de medicamentos GLP-1" data-en="Free health tracking for GLP-1 medication users">Monitorização de saúde gratuita para utilizadores de medicamentos GLP-1</p>
+                </div>
+                <div class="footer-section">
+                    <h4 data-pt="Links" data-en="Links">Links</h4>
+                    <ul>
+                        <li><a href="https://play.google.com/store/apps/details?id=com.ruifelix.healthtrackfree" target="_blank" data-pt="Descarregar App" data-en="Download App">Descarregar App</a></li>
+                        <li><a href="mailto:ruifelix.dev@gmail.com" data-pt="Contacto" data-en="Contact">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 HealthTrackFree. <span data-pt="Desenvolvido por Rui Félix" data-en="Developed by Rui Félix">Desenvolvido por Rui Félix</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
