@@ -1,3 +1,6 @@
+// Wait for DOM to be ready
+document.addEventListener('DOMContentLoaded', function() {
+
 // Language switcher
 let currentLang = 'pt';
 
@@ -71,3 +74,5 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         }
     });
 });
+
+}); // End DOMContentLoaded
