@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Primary Meta Tags -->
+    <title>Roadmap - HealthTrackFree Future Plans</title>
+    <meta name="description" content="See what's coming next for HealthTrackFree: iOS app, premium web dashboard, AI features and more.">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Roadmap - HealthTrackFree Future Plans">
+    <meta property="og:description" content="See what's coming next for HealthTrackFree">
+    <meta property="og:url" content="https://rf-mref.github.io/healthtrackfree/roadmap.html">
+    
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .timeline {
+            position: relative;
+            padding-left: 40px;
+        }
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 10px;
+            top: 0;
+            bottom: 0;
+            width: 3px;
+            background: linear-gradient(180deg, #2E7D32 0%, #81C784 100%);
+        }
+        .timeline-item {
+            position: relative;
+            margin-bottom: 40px;
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -34px;
+            top: 35px;
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            background: white;
+            border: 3px solid #2E7D32;
+        }
+        .timeline-item.done::before {
+            background: #2E7D32;
+        }
+        .timeline-status {
+            display: inline-block;
+            padding: 6px 16px;
+            border-radius: 20px;
+            font-size: 13px;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+        .status-done {
+            background: #E8F5E9;
+            color: #2E7D32;
+        }
+        .status-progress {
+            background: #FFF3E0;
+            color: #F57C00;
+        }
+        .status-planned {
+            background: #E3F2FD;
+            color: #1976D2;
+        }
+        .feature-list {
+            list-style: none;
+            padding: 0;
+            margin-top: 16px;
+        }
+        .feature-list li {
+            padding: 8px 0;
+            color: #757575;
+            padding-left: 24px;
+            position: relative;
+        }
+        .feature-list li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: #2E7D32;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <!-- Language Toggle -->
+    <div class="lang-toggle">
+        <button class="lang-btn active" data-lang="pt">PT</button>
+        <button class="lang-btn" data-lang="en">EN</button>
+    </div>
+
+    <!-- Header -->
+    <header style="background: linear-gradient(135deg, #2E7D32 0%, #1B5E20 100%); color: white; padding: 60px 0; text-align: center;">
+        <div class="container">
+            <h1 style="font-size: 42px; margin-bottom: 16px;">Roadmap</h1>
+            <p style="font-size: 20px; opacity: 0.9;" data-pt="O que vem a seguir para o HealthTrackFree" data-en="What's coming next for HealthTrackFree">O que vem a seguir para o HealthTrackFree</p>
+            <a href="index.html" style="display: inline-block; margin-top: 20px; color: white; opacity: 0.8; text-decoration: none;" data-pt="← Voltar ao início" data-en="← Back to home">← Voltar ao início</a>
+        </div>
+    </header>
+
+    <!-- Roadmap Timeline -->
+    <section style="padding: 80px 0; background: #FAFAFA;">
+        <div class="container" style="max-width: 900px;">
+            
+            <div class="timeline">
+                
+                <!-- Q1 2026 - Current -->
+                <div class="timeline-item done">
+                    <span class="timeline-status status-done" data-pt="✓ Concluído" data-en="✓ Completed">✓ Concluído</span>
+                    <h3 style="color: #212121; margin-bottom: 8px;">Q1 2026 - <span data-pt="Versão Atual" data-en="Current Version">Versão Atual</span></h3>
+                    <p style="color: #757575; margin-bottom: 16px;" data-pt="Janeiro - Março 2026" data-en="January - March 2026">Janeiro - Março 2026</p>
+                    <ul class="feature-list">
+                        <li data-pt="App Android completa com todas as funcionalidades core" data-en="Complete Android app with all core features">App Android completa com todas as funcionalidades core</li>
+                        <li data-pt="App companion Wear OS com sincronização bidirecional" data-en="Wear OS companion app with bidirectional sync">App companion Wear OS com sincronização bidirecional</li>
+                        <li data-pt="Suporte para 6 idiomas (PT, PT-BR, EN, ES, FR, DE)" data-en="Support for 6 languages (PT, PT-BR, EN, ES, FR, DE)">Suporte para 6 idiomas (PT, PT-BR, EN, ES, FR, DE)</li>
+                        <li data-pt="Website oficial com SEO otimizado" data-en="Official website with optimized SEO">Website oficial com SEO otimizado</li>
+                        <li data-pt="Material Design 3 implementado" data-en="Material Design 3 implemented">Material Design 3 implementado</li>
+                    </ul>
+                </div>
+
+                <!-- Q2 2026 - iOS Launch -->
+                <div class="timeline-item">
+                    <span class="timeline-status status-progress" data-pt="🔨 Em Progresso" data-en="🔨 In Progress">🔨 Em Progresso</span>
+                    <h3 style="color: #212121; margin-bottom: 8px;">Q2 2026 - <span data-pt="Lançamento iOS" data-en="iOS Launch">Lançamento iOS</span></h3>
+                    <p style="color: #757575; margin-bottom: 16px;" data-pt="Abril - Junho 2026" data-en="April - June 2026">Abril - Junho 2026</p>
+                    <ul class="feature-list">
+                        <li data-pt="App iOS nativa (€1.99 one-time)" data-en="Native iOS app (€1.99 one-time)">App iOS nativa (€1.99 one-time)</li>
+                        <li data-pt="Sincronização cross-platform (Android ↔ iOS)" data-en="Cross-platform sync (Android ↔ iOS)">Sincronização cross-platform (Android ↔ iOS)</li>
+                        <li data-pt="Widgets iOS para Home Screen" data-en="iOS widgets for Home Screen">Widgets iOS para Home Screen</li>
+                        <li data-pt="Apple Health integration" data-en="Apple Health integration">Apple Health integration</li>
+                        <li data-pt="Apple Watch companion app" data-en="Apple Watch companion app">Apple Watch companion app</li>
+                    </ul>
+                </div>
+
+                <!-- Q3 2026 - Web Dashboard Beta -->
+                <div class="timeline-item">
+                    <span class="timeline-status status-planned" data-pt="📅 Planeado" data-en="📅 Planned">📅 Planeado</span>
+                    <h3 style="color: #212121; margin-bottom: 8px;">Q3 2026 - <span data-pt="Dashboard Web (Beta)" data-en="Web Dashboard (Beta)">Dashboard Web (Beta)</span></h3>
+                    <p style="color: #757575; margin-bottom: 16px;" data-pt="Julho - Setembro 2026" data-en="July - September 2026">Julho - Setembro 2026</p>
+                    <ul class="feature-list">
+                        <li data-pt="Dashboard web com visualizações avançadas" data-en="Web dashboard with advanced visualizations">Dashboard web com visualizações avançadas</li>
+                        <li data-pt="Entrada de dados via browser" data-en="Data entry via browser">Entrada de dados via browser</li>
+                        <li data-pt="Sincronização em tempo real com apps mobile" data-en="Real-time sync with mobile apps">Sincronização em tempo real com apps mobile</li>
+                        <li data-pt="Programa de beta testers (grátis)" data-en="Beta testers program (free)">Programa de beta testers (grátis)</li>
+                    </ul>
+                </div>
+
+                <!-- Q4 2026 - Premium Features -->
+                <div class="timeline-item">
+                    <span class="timeline-status status-planned" data-pt="📅 Planeado" data-en="📅 Planned">📅 Planeado</span>
+                    <h3 style="color: #212121; margin-bottom: 8px;">Q4 2026 - <span data-pt="Funcionalidades Premium" data-en="Premium Features">Funcionalidades Premium</span></h3>
+                    <p style="color: #757575; margin-bottom: 16px;" data-pt="Outubro - Dezembro 2026" data-en="October - December 2026">Outubro - Dezembro 2026</p>
+                    <ul class="feature-list">
+                        <li data-pt="Dashboard Web Premium (€2/mês)" data-en="Premium Web Dashboard (€2/month)">Dashboard Web Premium (€2/mês)</li>
+                        <li data-pt="Análise de fotos de refeições com IA" data-en="AI-powered meal photo analysis">Análise de fotos de refeições com IA</li>
+                        <li data-pt="Insights personalizados com Claude AI" data-en="Personalized insights with Claude AI">Insights personalizados com Claude AI</li>
+                        <li data-pt="Relatórios médicos avançados automáticos" data-en="Advanced automatic medical reports">Relatórios médicos avançados automáticos</li>
+                        <li data-pt="Previsões de peso melhoradas com ML" data-en="Improved weight predictions with ML">Previsões de peso melhoradas com ML</li>
+                    </ul>
+                </div>
+
+                <!-- 2027 - Advanced Features -->
+                <div class="timeline-item">
+                    <span class="timeline-status status-planned" data-pt="📅 Planeado" data-en="📅 Planned">📅 Planeado</span>
+                    <h3 style="color: #212121; margin-bottom: 8px;">2027 - <span data-pt="Funcionalidades Avançadas" data-en="Advanced Features">Funcionalidades Avançadas</span></h3>
+                    <p style="color: #757575; margin-bottom: 16px;" data-pt="Ao longo de 2027" data-en="Throughout 2027">Ao longo de 2027</p>
+                    <ul class="feature-list">
+                        <li data-pt="Integração com dispositivos médicos (balanças smart, CGM)" data-en="Integration with medical devices (smart scales, CGM)">Integração com dispositivos médicos (balanças smart, CGM)</li>
+                        <li data-pt="Comunidade in-app (partilha anónima de progresso)" data-en="In-app community (anonymous progress sharing)">Comunidade in-app (partilha anónima de progresso)</li>
+                        <li data-pt="Desafios e gamification" data-en="Challenges and gamification">Desafios e gamification</li>
+                        <li data-pt="API pública para developers" data-en="Public API for developers">API pública para developers</li>
+                        <li data-pt="Mais idiomas (IT, NL, PL, etc)" data-en="More languages (IT, NL, PL, etc)">Mais idiomas (IT, NL, PL, etc)</li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <!-- Note -->
+            <div style="background: #E3F2FD; padding: 24px; border-radius: 12px; margin-top: 40px; border-left: 4px solid #1976D2;">
+                <p style="color: #1565C0; font-weight: 600; margin-bottom: 8px;" data-pt="Nota Importante" data-en="Important Note">Nota Importante</p>
+                <p style="color: #1976D2; line-height: 1.6;" data-pt="Este roadmap é orientativo e pode sofrer alterações baseadas no feedback da comunidade e prioridades de desenvolvimento. A versão Android base será SEMPRE grátis, independentemente de futuras funcionalidades premium." data-en="This roadmap is indicative and may change based on community feedback and development priorities. The base Android version will ALWAYS be free, regardless of future premium features.">Este roadmap é orientativo e pode sofrer alterações baseadas no feedback da comunidade e prioridades de desenvolvimento. A versão Android base será SEMPRE grátis, independentemente de futuras funcionalidades premium.</p>
+            </div>
+
+            <!-- Feedback -->
+            <div style="text-align: center; margin-top: 60px;">
+                <h3 style="color: #212121; margin-bottom: 16px;" data-pt="Tens Sugestões?" data-en="Have Suggestions?">Tens Sugestões?</h3>
+                <p style="color: #757575; margin-bottom: 24px;" data-pt="O roadmap evolui com base no feedback dos utilizadores. Partilha as tuas ideias!" data-en="The roadmap evolves based on user feedback. Share your ideas!">O roadmap evolui com base no feedback dos utilizadores. Partilha as tuas ideias!</p>
+                <a href="mailto:ruialexfelix@yahoo.com" style="display: inline-block; padding: 14px 32px; background: #2E7D32; color: white; text-decoration: none; border-radius: 8px; font-weight: 600;">
+                    <span data-pt="📧 Enviar Feedback" data-en="📧 Send Feedback">📧 Enviar Feedback</span>
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>HealthTrackFree</h3>
+                    <p data-pt="Monitorização de saúde gratuita para utilizadores de medicamentos GLP-1" data-en="Free health tracking for GLP-1 medication users">Monitorização de saúde gratuita para utilizadores de medicamentos GLP-1</p>
+                </div>
+                <div class="footer-section">
+                    <h4 data-pt="Links" data-en="Links">Links</h4>
+                    <ul>
+                        <li><a href="index.html" data-pt="Início" data-en="Home">Início</a></li>
+                        <li><a href="why-free.html" data-pt="Porquê Grátis?" data-en="Why Free?">Porquê Grátis?</a></li>
+                        <li><a href="roadmap.html" data-pt="Roadmap" data-en="Roadmap">Roadmap</a></li>
+                        <li><a href="https://play.google.com/store/apps/details?id=com.ruifelix.healthtrackfree" target="_blank" data-pt="Descarregar App" data-en="Download App">Descarregar App</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 HealthTrackFree. <span data-pt="Desenvolvido por Rui Félix" data-en="Developed by Rui Félix">Desenvolvido por Rui Félix</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
