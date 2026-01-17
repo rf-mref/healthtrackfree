@@ -1,40 +1,62 @@
 // Wait for DOM to be fully loaded
 window.addEventListener('load', function() {
+    console.log('Script loaded!');
     
-    // Language Switcher
+    // Language Switcher with localStorage
     const langButtons = document.querySelectorAll('.lang-btn');
-    let currentLang = 'pt';
+    let currentLang = localStorage.getItem('healthtrack-lang') || 'pt';
     
+    // Apply saved language on page load
+    function applyLanguage(lang) {
+        currentLang = lang;
+        
+        // Update active button
+        langButtons.forEach(function(b) {
+            b.classList.remove('active');
+            if (b.getAttribute('data-lang') === lang) {
+                b.classList.add('active');
+            }
+        });
+        
+        // Update all translatable elements
+        const elements = document.querySelectorAll('[data-pt]');
+        elements.forEach(function(el) {
+            if (currentLang === 'pt') {
+                el.textContent = el.getAttribute('data-pt');
+            } else {
+                el.textContent = el.getAttribute('data-en');
+            }
+        });
+        
+        // Update HTML lang attribute
+        document.documentElement.setAttribute('lang', currentLang);
+    }
+    
+    // Apply language on load
+    applyLanguage(currentLang);
+    console.log('Applied language:', currentLang);
+    
+    // Add click listeners
     langButtons.forEach(function(btn) {
         btn.addEventListener('click', function() {
-            currentLang = this.getAttribute('data-lang');
+            console.log('Language button clicked:', this.getAttribute('data-lang'));
+            const newLang = this.getAttribute('data-lang');
             
-            // Update active button
-            langButtons.forEach(function(b) {
-                b.classList.remove('active');
-            });
-            this.classList.add('active');
+            // Save to localStorage
+            localStorage.setItem('healthtrack-lang', newLang);
             
-            // Update all translatable elements
-            const elements = document.querySelectorAll('[data-pt]');
-            elements.forEach(function(el) {
-                if (currentLang === 'pt') {
-                    el.textContent = el.getAttribute('data-pt');
-                } else {
-                    el.textContent = el.getAttribute('data-en');
-                }
-            });
-            
-            // Update HTML lang attribute
-            document.documentElement.setAttribute('lang', currentLang);
+            // Apply language
+            applyLanguage(newLang);
         });
     });
     
     // FAQ Accordion
     const faqQuestions = document.querySelectorAll('.faq-question');
+    console.log('FAQ questions found:', faqQuestions.length);
     
     faqQuestions.forEach(function(question) {
         question.addEventListener('click', function() {
+            console.log('FAQ clicked');
             const item = this.parentElement;
             const wasActive = item.classList.contains('active');
             
