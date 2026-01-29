@@ -405,3 +405,144 @@ body {
         right: 12px;
     }
 }
+
+/* Web Dashboard Section */
+.web-dashboard {
+    padding: 80px 0;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+}
+
+.web-dashboard h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.dashboard-content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.dashboard-text h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.dashboard-text > p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 2rem;
+    opacity: 0.95;
+}
+
+.dashboard-features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+
+.feature-item {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 1.5rem;
+    border-radius: 12px;
+    backdrop-filter: blur(10px);
+}
+
+.feature-item .feature-icon {
+    font-size: 2rem;
+}
+
+.feature-item h4 {
+    font-size: 1.1rem;
+    margin-bottom: 0.3rem;
+}
+
+.feature-item p {
+    font-size: 0.9rem;
+    opacity: 0.9;
+}
+
+.sync-steps {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 2rem;
+    border-radius: 12px;
+    margin: 2rem 0;
+    backdrop-filter: blur(10px);
+}
+
+.sync-steps h4 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+.sync-steps ol {
+    margin-left: 1.5rem;
+}
+
+.sync-steps li {
+    font-size: 1.05rem;
+    margin-bottom: 0.8rem;
+    line-height: 1.6;
+}
+
+.dashboard-cta {
+    text-align: center;
+    margin-top: 2.5rem;
+}
+
+.dashboard-cta .btn-primary {
+    background: white;
+    color: #667eea;
+    padding: 1rem 2.5rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 50px;
+    display: inline-block;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.dashboard-cta .btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+.cta-note {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    opacity: 0.85;
+}
+
+@media (max-width: 768px) {
+    .web-dashboard h2 {
+        font-size: 2rem;
+    }
+    
+    .dashboard-text h3 {
+        font-size: 1.5rem;
+    }
+    
+    .dashboard-features {
+        grid-template-columns: 1fr;
+    }
+    
+    .sync-steps {
+        padding: 1.5rem;
+    }
+}
+
+/* Badge de utilizadores ativos */
+.badge-active {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.85; }
+}
