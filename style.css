@@ -546,3 +546,14 @@ body {
     0%, 100% { opacity: 1; }
     50% { opacity: 0.85; }
 }
+
+/* Dashboard Note */
+.dashboard-note {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    text-align: center;
+    font-size: 1rem;
+    backdrop-filter: blur(10px);
+}
