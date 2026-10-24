@@ -1,6 +1,6 @@
 # HealthTrackFree Website
 
-Site oficial da app HealthTrackFree - Monitorização de saúde para utilizadores de medicamentos GLP-1.
+Site oficial do HealthTrackFree (Android) e do Tracely (iPhone) - o diário do tratamento GLP-1.
 
 ## 🚀 Deploy no GitHub Pages
 
@@ -48,10 +48,7 @@ healthtrackfree-site/
 ├── index.html          # Página principal
 ├── style.css           # Estilos CSS
 ├── script.js           # JavaScript
-├── screenshots/        # Imagens da app (12 screenshots)
-│   ├── shot1.jpg
-│   ├── shot2.jpg
-│   └── ...
+├── screenshots/        # Capturas da 3.4 (v34-*.jpg): telemóvel (emulador Android) e relógio (emulador Wear OS)
 └── README.md          # Este ficheiro
 ```
 
@@ -67,9 +64,9 @@ healthtrackfree-site/
 
 ## 🎨 Cores
 
-- Primary: #2E7D32 (Verde)
-- Accent: #FF6F00 (Laranja)
-- Background: #FAFAFA
+- Primary: #6750A4 (roxo da app, Colors.xaml)
+- Accent: #FF6D00 (Laranja)
+- Background: #FEFDFB
 
 ## 📝 Customização
 
@@ -81,6 +78,7 @@ Para alterar conteúdo:
 ## 🔗 Links Importantes
 
 - Google Play Store: https://play.google.com/store/apps/details?id=com.ruifelix.healthtrackfree
+- App Store (Tracely): https://apps.apple.com/pt/app/tracely-glp1-tracker/id6761441886
 - Email de contacto: ruifelix.dev@gmail.com
 
 ---
